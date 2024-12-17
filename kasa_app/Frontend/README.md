@@ -11,7 +11,7 @@ Le projet vise à moderniser le site de Kasa, une entreprise de location d'appar
 
 - ** Frontend : ** React, Vite, React Router
 - **Backend : ** Données simulées à partir d'un fichier json
-- **Outils : Git, Github
+- **Outils : ** Git, Github
 
 ## Fonctionnalités
 
