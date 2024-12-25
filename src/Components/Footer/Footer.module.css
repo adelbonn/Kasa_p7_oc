@@ -1,0 +1,16 @@
+@import '../../Styles/variables.css';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--balck-color);
+    color: var(--white-color);
+    height: 209px;
+    width: 100%;
+    font-size: var(--size-large);
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-family);
+ 
+}

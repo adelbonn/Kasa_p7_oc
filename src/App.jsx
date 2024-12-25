@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 
+import AppRouter from './Components/AppRouter/AppRouter';
+import './Styles/App.css';  // a vérifier
 
 function App() {
-
-
-  return (
-    <>
-      {/* <header /> */}
-    </>
-  )
+    return (
+        <>
+            <AppRouter />
+        </>
+    );
 }
 
-export default App
+export default App;

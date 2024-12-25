@@ -1,0 +1,12 @@
+@import './reset.css';
+@import './variables.css';
+
+
+.body {
+    font-family: var(--font-family);
+    font-size: var(--size-medium);
+    color: var(--black-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
