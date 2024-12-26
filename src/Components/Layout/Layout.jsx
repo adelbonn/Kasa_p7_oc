@@ -20,3 +20,5 @@ Layout.propTypes = {
     children: PropTypes.node.isRequired,
 };
 export default Layout;
+
+//revoir isRequired pour s'assurer de ne pas le mette trop souvent

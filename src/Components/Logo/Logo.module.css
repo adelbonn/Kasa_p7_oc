@@ -1,6 +1,7 @@
 /* @import '../../Styles/variables.css' ; */
 
 .logo {
+    display: block;
     max-width: 210px;
     min-width: 145px;
     width: 210px;

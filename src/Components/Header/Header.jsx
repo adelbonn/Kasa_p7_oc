@@ -5,9 +5,9 @@ import NavBarLinkContainer from '../NavBarLinksContainer/NavBarLinkContainer';
 
 const Header =() => {
     return (
-        <header className={styles.navBar}>
-            <Logo />
-            <nav>
+        <header className={styles.header}>
+            <nav className={styles.navBar}>
+            <Logo /> 
             <NavBarLinkContainer>
                 <NavBarLink to ='/'>Accueil</NavBarLink>
                 <NavBarLink to ='/about'>A propos</NavBarLink>

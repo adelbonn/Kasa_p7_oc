@@ -1,16 +1,17 @@
 
-import styles from './Home.module.css';
-import NavBar from '../../Components/NavBar/NavBar';
-import Footer from '../../Components/Footer/Footer';
+// import styles from './Home.module.css';
+// import NavBar from '../../Components/NavBar/NavBar';
+// import Footer from '../../Components/Footer/Footer';
+import Layout from '../../Components/Layout/Layout';
 
 const Home = () => {
     return (
         <>
-        <NavBar />
-        <div className={styles.container}>
+     <Layout>
+        <div>
             <h1>Chez vous, partout et ailleurs</h1>
         </div>
-        <Footer />
+        </Layout>
         </>
     );
 }

@@ -1,6 +1,6 @@
 
 import {NavLink } from 'react-router-dom';
-import styles from './NotFound.module.css';
+// import styles from './NotFound.module.css';
 //mettre Link pour tester les differnces
 
 const NotFound = () => {

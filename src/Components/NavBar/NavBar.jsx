@@ -8,8 +8,8 @@ const NavBar = () => {
         <nav className={styles.navBar}>
             <Logo />
             <NavBarLinkContainer>
-            <NavLink to ='/'>Accueil</NavLink>
-            <NavLink to ='/about'>A propos</NavLink>
+              <NavLink to ='/'>Accueil</NavLink>
+              <NavLink to ='/about'>A propos</NavLink>
             </NavBarLinkContainer>
         </nav>
     )

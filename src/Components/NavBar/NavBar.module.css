@@ -1,11 +1,11 @@
-/* @import '../../../styles/variables.css'; */
+@import '../../Styles//variables.css';
 
 .navBar {
-    font-size: var(--size-medium);
+    /* font-size: var(--size-medium);
     font-weight: var(--font-weight-medium);
     font-family: var(--font-family);
-    color: var(--black-color);
-    text-decoration: none;
+    color: var(--black-color); */
+    /* text-decoration: none; */
     margin-left: 20px;
     cursor: pointer;
     display: flex;

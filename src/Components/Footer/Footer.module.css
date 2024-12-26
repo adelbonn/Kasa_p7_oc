@@ -1,16 +1,19 @@
 @import '../../Styles/variables.css';
 
+
+
 .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    background: var(--balck-color);
+    justify-content: center;
+    background: var(--black-color);
     color: var(--white-color);
     height: 209px;
     width: 100%;
     font-size: var(--size-large);
     font-weight: var(--font-weight-medium);
-    font-family: var(--font-family);
- 
+    gap: 29px;
+    padding: 66px 0px 29px;
+    
 }
