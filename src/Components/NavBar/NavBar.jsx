@@ -3,10 +3,12 @@ import Logo from '../Logo/Logo';
 import styles from './NavBar.module.css';
 import NavBarLinkContainer from '../NavBarLinksContainer/NavBarLinkContainer';  
 
+
+
 const NavBar = () => {
     return (
         <nav className={styles.navBar}>
-            <Logo />
+             <Logo location="header"/>
             <NavBarLinkContainer>
               <NavLink to ='/'>Accueil</NavLink>
               <NavLink to ='/about'>A propos</NavLink>
@@ -15,3 +17,4 @@ const NavBar = () => {
     )
 }
 export default NavBar;
+
