@@ -1,7 +1,5 @@
 @import '../../Styles/variables.css';
 
-
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -15,5 +13,17 @@
     font-weight: var(--font-weight-medium);
     gap: 29px;
     padding: 66px 0px 29px;
-    
+}
+
+.footerLogo {
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        padding: 0;
+    }
+    .footer p {
+        font-size: var(--size-small);
+    }
 }

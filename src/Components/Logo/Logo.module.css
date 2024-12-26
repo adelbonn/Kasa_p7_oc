@@ -1,25 +1,34 @@
-/* @import '../../Styles/variables.css' ; */
+@import '../../Styles/variables.css';
+/* @import '../../Styles/index.css';
+@import '../../Styles/reset.css'; */
 
 .logo {
     display: block;
     max-width: 210px;
     min-width: 145px;
     width: 210px;
-    height:auto;
+    height: auto;
     max-height: 68px;
     min-height: 47px;
-    margin: 0px ;   
+    margin: 0;
 }
 
+.headerLogo {
+    color: var(--primary-color);
+}
 
-@media screen and (max-width: 768px) {
+.footerLogo {
+    color: var(--white-color);
+}
+
+@media screen and (max-width: 375px) {
     .logo {
         max-width: 145px;
         min-width: 100px;
         width: 145px;
-        height:auto;
+        height: auto;
         max-height: 47px;
         min-height: 32px;
-        margin: 0px ;   
+        margin: 0;
     }
 }

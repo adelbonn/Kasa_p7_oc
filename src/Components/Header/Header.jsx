@@ -3,11 +3,11 @@ import Logo from '../Logo/Logo';
 import styles from './Header.module.css';
 import NavBarLinkContainer from '../NavBarLinksContainer/NavBarLinkContainer';
 
-const Header =() => {
+const Header = () => {
     return (
         <header className={styles.header}>
             <nav className={styles.navBar}>
-            <Logo /> 
+            <Logo location="header"/> 
             <NavBarLinkContainer>
                 <NavBarLink to ='/'>Accueil</NavBarLink>
                 <NavBarLink to ='/about'>A propos</NavBarLink>
