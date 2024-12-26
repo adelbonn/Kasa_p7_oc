@@ -1,0 +1,16 @@
+@import '../../Styles/variables.css';
+
+.navBarLinkContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 57px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .navBarLinkContainer {
+        gap: 20px;
+    }
+}

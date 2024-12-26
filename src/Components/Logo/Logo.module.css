@@ -1,9 +1,24 @@
-@import '../../Styles/variables.css' ;
+/* @import '../../Styles/variables.css' ; */
 
 .logo {
-    width: 210;
-    height: auto;
-    text-decoration: none;
-    
+    max-width: 210px;
+    min-width: 145px;
+    width: 210px;
+    height:auto;
+    max-height: 68px;
+    min-height: 47px;
+    margin: 0px ;   
 }
 
+
+@media screen and (max-width: 768px) {
+    .logo {
+        max-width: 145px;
+        min-width: 100px;
+        width: 145px;
+        height:auto;
+        max-height: 47px;
+        min-height: 32px;
+        margin: 0px ;   
+    }
+}

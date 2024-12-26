@@ -1,0 +1,29 @@
+@import '../../styles/variables.css';
+
+.navBarLink {
+    font-size: var(--size-medium);
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-family);
+    color: var(--black-color);
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; 
+    align-items: center;
+    padding: 17px 0px;
+} 
+
+.navBarLinkItem {
+    /* margin: 17px 0px 0px 57px; */
+}
+
+.navBarLinkItem:hover {
+    /* color: var(--black-color); */
+    text-decoration-line: underline;
+}
+
+.active {
+    text-decoration-line: underline;
+}
