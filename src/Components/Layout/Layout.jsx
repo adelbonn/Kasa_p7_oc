@@ -17,6 +17,9 @@ switch(page){
     case 'about':
         heroContent = <HeroHeader image={heroImageAbout} />;
         break;
+    // case 'notFound':
+    //     heroContent = <HeroHeader title='404'/>;
+    //     break;
         default:
         heroContent = null;
 };

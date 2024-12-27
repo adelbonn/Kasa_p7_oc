@@ -1,0 +1,26 @@
+@import '../../Styles//variables.css';
+
+
+.NotFoundText {
+    align-items: center;
+    color: var(--primary-color);
+    text-align: center;
+}
+.NotFoundLink {
+    text-decoration: underline;
+    color: var(--black-color);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-medium);
+    color: var(--black-color);
+    font-size: var(--sizex-x-medium);
+}
+
+@media screen and (max-width: 365px) {
+
+    .NotFoundText {
+        font-size: var(--size-x-medium);
+    }
+    .NotFoundLink {
+        font-size: var(--size-small-medium);
+    }
+}

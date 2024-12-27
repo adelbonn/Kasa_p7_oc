@@ -1,8 +1,15 @@
 .NotFoundH1 {
-    font-size: 4rem;
+    font-size: var(--size-XX-large);
     margin: 0;
     padding: 0;
-    color: #333;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.NotFoundH2 {
+    font-size: var(--size-xxlarge);
+    margin: 0;
+    padding: 0;
     color: var(--primary-color);
     text-align: center;
 }
