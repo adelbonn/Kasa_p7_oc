@@ -14,6 +14,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* object-position: 50px 150px; */
 }
 
 .heroTitle {
@@ -24,6 +25,10 @@
     color: var(--white-color);
     text-align: center;
     z-index: 10;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+    line-height: 3rem;
+    /* letter-spacing: 0.04em; */
 }
 
 .heroHeader::after {

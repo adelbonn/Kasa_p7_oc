@@ -1,4 +1,6 @@
 import Layout from '../../Components/Layout/Layout';
+// import HeroHeader from '../../Components/HeroHeader/HeroHeader';
+// import heroImage from '../../assets/img/HeroImgAbout.png';
 
 
 
@@ -6,12 +8,8 @@ import Layout from '../../Components/Layout/Layout';
 const About = () => {
     return (
             <>
-              <Layout>  
-        
-                <h1>À propos</h1>
-                <p>
-                    Kasa est une plateforme de location de logements.
-                </p>
+              <Layout page='about'>  
+            {/* <HeroHeader image={heroImage} /> */}
               
                 </Layout>
             </>

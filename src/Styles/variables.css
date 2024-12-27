@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     /*colors*/
     --primary-color: #FF6060;
@@ -22,7 +25,26 @@
 
     /*font-family*/
     --font-family: 'Montserrat', sans-serif;
-
 }
+/* Classes spécifiques pour Montserrat */
+.montserrat-light {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-light);
+  }
+  
+  .montserrat-regular {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  .montserrat-medium {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .montserrat-bold {
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+  }
 
 

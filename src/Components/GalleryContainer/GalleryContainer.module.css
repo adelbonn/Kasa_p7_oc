@@ -1,0 +1,11 @@
+@import '../../Styles/variables.css';
+
+.galleryContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+}

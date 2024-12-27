@@ -1,22 +1,18 @@
 @import '../../styles/variables.css';
 
 .navBarLink {
-    /* font-size: var(--size-medium);
-    font-weight: var(--font-weight-medium);
-    font-family: var(--font-family);
-    color: var(--black-color);
-    text-decoration: none; */
+  
     margin-right: 20px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; 
-    align-items: center;
-    padding: 17px 0px;
+  
 } 
 
 .navBarLinkItem {
-    /* margin: 17px 0px 0px 57px; */
+    font-family: (var--font-family);
+ font-size: var(--size-large);
+    font-weight: var(--font-weight-medium);
 }
 
 .navBarLinkItem:hover {
@@ -25,5 +21,7 @@
 }
 
 .active {
+    font-size: var(--size-large);
+    font-weight: var(--font-weight-medium);
     text-decoration-line: underline;
 }
