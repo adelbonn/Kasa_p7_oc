@@ -1,0 +1,9 @@
+/* @import '../../Styles/variables.css'; */
+
+.title {
+    text-align: left;
+    color:var(--white-color);
+    font-size: var(--size-large);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+}

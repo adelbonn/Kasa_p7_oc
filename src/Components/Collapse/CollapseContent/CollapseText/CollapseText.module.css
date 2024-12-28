@@ -1,0 +1,10 @@
+/* @import '../../styles/variables.css'; */
+
+.collapseText {
+    background: var(--quinary-color);
+    color: var(--black-color);
+    padding: 20px;
+    font-size: 18px;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-regular);
+}

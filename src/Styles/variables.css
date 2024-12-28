@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+    /* display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif; */
+
     /*colors*/
     --primary-color: #FF6060;
     --secondary-color: #C4C4C4;
@@ -30,7 +36,7 @@
     --font-weight-bold: 700;
 
     /*font-family*/
-    --font-family: 'Montserrat', sans-serif;
+    --font-family-primary: 'Montserrat', sans-serif;
 }
 /* Classes spécifiques pour Montserrat */
 .montserrat-light {

@@ -1,0 +1,13 @@
+/* @import '../../Styles/variables.css'; */
+
+.arrowUp::after {
+    /* content: url('../../assets/arrow-up.png'); */
+    content: '▲';
+    color: #fff;
+}
+
+.arrowDown::after {
+   /* content: url('../../assets/arrow-down.png'); */
+   content: '▼';
+   color: #fff;
+}

@@ -1,19 +1,22 @@
 import Layout from '../../Components/Layout/Layout';
-// import HeroHeader from '../../Components/HeroHeader/HeroHeader';
-// import heroImage from '../../assets/img/HeroImgAbout.png';
-
+import styles from '../About/About.module.css';
+import Collapse from '../../Components/Collapse/Collapse';
+import data from '../../Data/Collapse.json';
 
 
 
 const About = () => {
-    return (
-            <>
-              <Layout page='about'>  
-            {/* <HeroHeader image={heroImage} /> */}
-              
-                </Layout>
-            </>
-      
-    )
-}
+  return (
+      <Layout page='about'>
+          <div className={styles.collapses}>
+              {data.map((item, id) => (
+                  <Collapse key={id} title={item.title}>
+                      {item.content}
+                  </Collapse>
+              ))}
+          </div>
+      </Layout>
+  );
+};
+
 export default About;
