@@ -1,24 +1,26 @@
 /* @import '../../Styles/variables.css'; */
 
-/*  */
-.collapse {
+
+/* .collapse {
     width: 100%;
     max-width: 1023px;
     height: 52px;
     background: #ff6060;/* background: var(--primary-color); */
-    border-radius: 5px;
+   /* border-radius: 5px;
     color:  #fff;    /* var(--white-color); */
-    padding: 20px;
+  /*  padding: 20px;
     margin: 30px auto;
     text-align: left;
     font-size: 1.125rem;        /*var(--sizex-x-medium); ( 18px)*/
-    display: flex;
+  /*  display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
+
 .collapseButton {
-    width: 100%;
-    max-width: 1023px;
+    width: 1023PX;
+    /* max-width: 1023px; */
+    min-width: 335px;
     height: 52px;
     background: #ff6060; /* background: var(--primary-color); */
     border-radius: 5px;
