@@ -1,0 +1,23 @@
+/* @import '../../Styles/variables.css'; */
+
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.6s ease-in-out;
+}
+
+
+.arrowUp {
+    transform: rotate(0deg);
+}
+
+.arrowDown {
+    transform: rotate(-180deg);
+}
+
+.arrowImg {
+    width: 30px;
+    height: 20px;
+    color: #fff;
+}
+

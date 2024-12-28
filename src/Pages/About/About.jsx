@@ -8,13 +8,13 @@ import data from '../../Data/Collapse.json';
 const About = () => {
   return (
       <Layout page='about'>
-          <div className={styles.collapses}>
+          <>
               {data.map((item, id) => (
                   <Collapse key={id} title={item.title}>
                       {item.content}
                   </Collapse>
               ))}
-          </div>
+          </>
       </Layout>
   );
 };
