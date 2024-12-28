@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import styles from './CollapseArrow.module.css'
-import arrowUp from '../../../../assets/img/Arrow.svg';
+import styles from './Arrow.module.css'
+import arrowUp from '../../assets/img/Arrow.svg';
 
 
 

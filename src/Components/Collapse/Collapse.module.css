@@ -17,7 +17,7 @@
     border-radius: 5px;
     color:  #fff;    /* var(--white-color); */
     padding: 20px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     text-align: left;
     font-size: 1.125rem;   /*var(--sizex-x-medium); ( 18px)*/
     
@@ -27,7 +27,21 @@
     cursor: pointer;
 }
 
+.collapseContent {
+    width: 100%;
+    max-width: 1023px;
+    min-width: 335Px;
+    background:#f7F7F7;
+    color: #000;
+    padding: 0 20px;
+    font-size: 1rem;
+    height: auto;
+    overflow: hidden;
+    transition : height 0.6s ease, opacity 0.5s ease-in;
+} 
 
-
-
+.collapseContent.open {
+    height: auto;
+    /* padding: 20px; */
+} 
 
