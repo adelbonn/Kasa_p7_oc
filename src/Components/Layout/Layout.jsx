@@ -9,23 +9,35 @@ import heroImageAbout from '../../assets/img/HeroImgAbout.png';
 const Layout = ({children, page}) => {
 
 let heroContent;
+let layoutGap;
+let mainClass;
 
 switch(page){
     case 'home':
         heroContent = <HeroHeader image={heroImageHome} title="Chez vous, partout et ailleurs" />;
+        layoutGap = styles.layoutHome;
+        mainClass = styles.mainHome;
     break;
     case 'about':
         heroContent = <HeroHeader image={heroImageAbout} />;
+        layoutGap = styles.layoutAbout;
+        mainClass = styles.mainAbout;
         break;
-    // case 'notFound':
-    //     heroContent = <HeroHeader title='404'/>;
-    //     break;
+    case 'notFound':
+        // heroContent = <HeroHeader title='404'/>;
+        layoutGap = styles.layoutNotFound;   
+        mainClass = styles.mainNotFound;
+        break;
+        case 'PropertyDetails':
+            layoutGap = styles.layoutPropertyDetails;
+            mainClass = styles.mainPropertyDetails;
+            break;
         default:
         heroContent = null;
 };
 
     return (
-        <div className={styles.layout}>
+        <div className={`${styles.layout} ${layoutGap} ${mainClass}`}>
             <Header>{heroContent}</Header> 
             <main className={styles.main}>
                 {children}

@@ -1,21 +1,30 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Collapse.module.css';
 import CollapseText from './CollapseContent/CollapseText/CollapseText';
-import CollapseArrow from './CollapseContent/CollapseArrow/CollapseArrow';
+import CollapseArrow from '../Arrow/Arrow';
 import CollapseTitle from './CollapseContent/CollapseTitle/CollapseTitle';
 
 
 const Collapse = ({ title, children }) => {
-    
-    const [isOpen, setIsOpen] = useState(false);
+
+// const contentRef = useRef(null);
+const [isOpen, setIsOpen] = useState(false);
 
     const handleCollapse = () => {
         setIsOpen(!isOpen);
     };
 
+    // useEffect(() => {
+    //     if (isOpen) {
+    //         contentRef.current.style.height = `${contentRef.current.scrollHeight}px`;
+    //     } else {
+    //         contentRef.current.style.height = '0px';
+    //     }
+    // }, [isOpen]);
+
+
     return (
-        // <div className={styles.collapse}>
         <>
             <button
                 className={styles.collapseButton}
@@ -31,7 +40,7 @@ const Collapse = ({ title, children }) => {
                     <CollapseText>{children}</CollapseText>
                 </div>
             )}
-        {/* // </div> */}
+
         </>
     );
 };

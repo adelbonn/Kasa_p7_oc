@@ -1,0 +1,11 @@
+
+/* @import '../../Styles/variables.css'; */
+
+.tag {
+    background: #ff6060;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem; /* var(--size-medium); */
+    margin: 5px;
+}
