@@ -15,7 +15,6 @@ const Collapse = ({ title, children }) => {
     };
 
     return (
-        // <div className={styles.collapse}>
         <>
             <button
                 className={styles.collapseButton}
@@ -31,7 +30,6 @@ const Collapse = ({ title, children }) => {
                     <CollapseText>{children}</CollapseText>
                 </div>
             )}
-        {/* // </div> */}
         </>
     );
 };

@@ -1,15 +1,22 @@
 /* @import '../../Styles/variables.css'; */
 
-.arrowUp::after {
-    content: url('../../../../assets/img/ArrowUp.png');
-    /* content: '▲'; */
-    color: #fff;
-    z-index: 1;
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.6s ease;
 }
 
-.arrowDown::after {
-   content: url('../../../../assets//img/ArrowDown.png');
-   /* content: '▼'; */
-   color: #fff;
-    z-index: 1;
+
+.arrowUp {
+    transform: rotate(0deg);
+}
+
+.arrowDown {
+    transform: rotate(-180deg);
+}
+
+.arrowImg {
+    width: 30px;
+    height: 20px;
+    color: #fff;
 }
