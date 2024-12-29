@@ -8,7 +8,7 @@ import styles  from './PropertyDetails.module.css';
 const PropertyDetails = () => {
 
     const { id } = useParams();
-    const property = data.id.find((item) => item.id ===id);
+    const property = data.find((item) => item.id ===id);
 console.log('propertyId', id);
 console.log('property data', property);
 
