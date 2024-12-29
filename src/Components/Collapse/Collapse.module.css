@@ -1,4 +1,4 @@
-/* @import '../../Styles/variables.css'; */
+@import '../../Styles/variables.css';
 
 
 .collapse {
@@ -10,16 +10,16 @@
 
 .collapseButton {
     width: 100%;
-    max-width: 1023px;
-    min-width: 335px;
+    /* max-width: 1023px;
+    min-width: 335px; */
     height: 52px;
-    background: #ff6060; /* background: var(--primary-color); */
+    background: var(--primary-color);  /* #ff6060;*/
     border-radius: 5px;
-    color:  #fff;    /* var(--white-color); */
+    color: var(--white-color);   /* #fff;   */
     padding: 20px;
     margin: 30px auto 0;
     text-align: left;
-    font-size: 1.125rem;   /*var(--sizex-x-medium); ( 18px)*/
+    font-size: var(--sizex-x-medium);     /*1.125rem; ( 18px)*/
     
     display: flex;
     justify-content: space-between;
@@ -30,18 +30,17 @@
 .collapseContent {
     width: 100%;
     max-width: 1023px;
-    min-width: 335Px;
-    background:#f7F7F7;
-    color: #000;
+    min-width: 335px;
+    background: var(--quinary-color);
+    color: var(--black-color);
     padding: 0 20px;
     font-size: 1rem;
     height: auto;
     overflow: hidden;
-    transition : height 0.6s ease, opacity 0.5s ease-in;
-} 
+    transition: height 0.6s ease, opacity 0.5s ease-in;
+}
 
 .collapseContent.open {
     height: auto;
-    /* padding: 20px; */
-} 
-
+    padding: 20px;
+}

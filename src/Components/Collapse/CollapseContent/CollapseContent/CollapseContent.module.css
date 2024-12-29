@@ -1,0 +1,23 @@
+@import '../../../../Styles/variables.css';
+
+.collapseContent {
+    background: var(--quinary-color);
+    color: var(--black-color);
+    padding: 20px; /*vérifier que l'afficchage se fait sans saut , si c'est le cas ajuster le padding*/
+    font-size: 18px;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-regular);
+    max-width: 1023px;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.4s ease, opacity 0.35s ease-in;
+}
+
+.collapseContent.open {
+    height: auto;
+    padding: 20px;  /*vérifier que tout est correct a l'affichage du contenu*/
+    opacity: 1;
+}

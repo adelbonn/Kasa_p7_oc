@@ -1,6 +1,5 @@
 import { useParams, Navigate } from 'react-router-dom';
 import data from '../../Data/DataLogements.json';
-import Layout from '../../Components/Layout/Layout';
 // import Slider from '../../Components/Slider/Slider';
 // import Collapse from '../../Components/Collapse/Collapse';
 import styles  from './PropertyDetails.module.css';
@@ -18,12 +17,12 @@ console.log('property data', property);
     }
 
     return (
-        <Layout page='propertyDetails'>
+      
             <div className={styles.propertyDetails}>
                 {/* <Slider pictures={property.pictures}/> */}
                {/* h1(title), P(description), Tag(tags), Host(host: name, picture),stars (rating) collapse('equipement) */}
             </div>
-        </Layout>
+    
     )
 };
 
