@@ -53,7 +53,7 @@ const contentRef = useRef(null);
              >
                 <CollapseContent content={content} />
               
-                <CollapseContent content={content} />
+              
             </div>
         </>
     );
