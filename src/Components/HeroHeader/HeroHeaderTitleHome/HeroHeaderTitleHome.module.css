@@ -12,5 +12,13 @@
     font-weight: var(--font-weight-bold);
     font-size: var(--size-xxlarge);
     line-height: 3rem;
-    /* letter-spacing: 0.04em; */
+   
+}
+
+@media screen and (max-width: 375px) {
+    .heroTitle {
+        font-size: var(--size-large);
+        text-align: left;
+    }
+    
 }

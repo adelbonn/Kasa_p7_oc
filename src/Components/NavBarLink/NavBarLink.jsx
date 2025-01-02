@@ -8,7 +8,7 @@ const NavBarLink = ({ to, children }) => {
         <NavLink 
         to={to} 
         className={({ isActive }) => 
-            (isActive ? `${styles.navBarLinkItems} ${styles.active}` 
+            (isActive ? `${styles.navBarLinkItem} ${styles.active}` 
                 : styles.navBarLinkItem)}
             >
             {children}

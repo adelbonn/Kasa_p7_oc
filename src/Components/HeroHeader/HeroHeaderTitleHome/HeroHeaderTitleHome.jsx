@@ -3,9 +3,9 @@ import styles from './HeroHeaderTitleHome.module.css';
 
 const HeroHeaderTitleHome = () => {
 return (
-    <>
+    
     <h1 className={styles.heroTitle}>Chez vous, partout et ailleurs</h1>
-    </>
+   
   );
 };
 

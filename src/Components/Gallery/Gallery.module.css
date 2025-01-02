@@ -19,15 +19,18 @@
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
-    background: var(--quinary-color);
-
-    padding: 50px;
+    padding: 50px 50px;
     margin: 0 auto;
     width: 100%;
-    max-width: 1240px;
-    min-width: 335px;
     background: var(--quinary-color);
     border-radius: 20px;
 }
 
-
+@media screen and (max-width: 375px) {
+    .gallery {
+        padding: 0;
+        margin: 0 auto;
+        gap: 20px;
+        background: var(--white-color);
+    }
+}

@@ -1,6 +1,6 @@
 @import '../../Styles/variables.css';
-/* @import '../../Styles/index.css';
-@import '../../Styles/reset.css'; */
+ @import '../../Styles/index.css';
+@import '../../Styles/reset.css'; 
 
 .logo {
     display: block;
@@ -23,12 +23,12 @@
 
 @media screen and (max-width: 375px) {
     .logo {
-        max-width: 145px;
-        min-width: 100px;
+        /* max-width: 145px;
+        min-width: 100px; */
         width: 145px;
         height: auto;
-        max-height: 47px;
-        min-height: 32px;
+        /* max-height: 47px;
+        min-height: 32px; */
         margin: 0;
     }
 }

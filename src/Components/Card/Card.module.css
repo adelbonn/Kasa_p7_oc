@@ -38,6 +38,19 @@
     left: 20px;
     color: var(--white-color);
     font-family: var(--font-family-primary);
-    /* font-weight: var(--font-weight-bold); */
-    font-size: 18px; /*Mettre une variable font-size, egale a 18px, et mettre les mediaqueries*/
+    font-weight: var(--font-weight-bold);
+    font-size:  var(--sizex-x-medium); 
+}
+
+@media screen and (max-width: 375px) {
+    .cardTitle {
+        font-size: var(--sizex-x-medium);
+    }
+
+    .card {
+        width: 335px;
+        height: 255px;
+    }
+
+   
 }

@@ -1,17 +1,15 @@
 @import '../../styles/variables.css';
 
 .navBarLink {
-  
     margin-right: 20px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
-  
 } 
 
 .navBarLinkItem {
-    font-family: (var--font-family);
- font-size: var(--size-large);
+    font-family: var(--font-family);
+    font-size: var(--size-large);
     font-weight: var(--font-weight-medium);
 }
 
@@ -24,4 +22,16 @@
     font-size: var(--size-large);
     font-weight: var(--font-weight-medium);
     text-decoration-line: underline;
+}
+
+@media screen and (max-width: 375px) {
+    .navBarLinkItem {
+        font-size: var(--size-small);
+        /* margin-right: 10px; */
+    }
+
+    .active {
+        font-size: var(--size-small);
+        /* margin-right: 10px; */
+    }
 }

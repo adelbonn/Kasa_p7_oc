@@ -1,6 +1,6 @@
 /* @import '../../styles/variables.css'; */
 .layout {
-    flex-grow:1;
+    /* flex-grow:1; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,76 +9,44 @@
     min-height: 100vh;
 }
 
-.layoutHome .layoutPropertyDetails {
-    gap: 50px;
-}
-
-
-.layoutAbout {
-    gap: 38px;
-}
-
-.layoutNotfound {
-    gap: 139px;
-}
 
  .main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 50px; */
     width: 100%;
     object-fit: cover;
     margin: 0;
     padding: 0 100PX;
  }
 
- .mainHome {
-    gap: 50px;
- }
- .mainAbout {
-    gap: 38px;
- }
-.mainNotfound {
-    gap: 139px;
-}
 
-.mainPropertyDetails {
-    gap: 50px;
-}
  
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .layout {
-        gap: 20px;
+        gap: 27px;
+      
     }
-    /* .layoutHome {
-        gap: 20px;
-    }
-    .layoutPropertyDetails {
-        gap: 20px;
-    }
-    .layoutAbout {
-        gap: 20px;
-    }
-    .layoutNotfound {
-        gap: 20px;
-    } */
+   
     .main {
         gap: 20px;
-        padding: 0;
+        padding: 20px;
+        margin: 0 auto;
     }
-    /* .mainHome {
-        gap: 20px;
+    
+} */
+@media screen and (max-width: 375px) {
+    .layout {
+        gap: 27px;
+      
     }
-    .mainPropertyDetails {
+   
+    .main {
         gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
     }
-    .mainAbout {
-        gap: 20px;
-    }
-    .mainNotfound {
-        gap: 20px;
-    } */
+    
 }

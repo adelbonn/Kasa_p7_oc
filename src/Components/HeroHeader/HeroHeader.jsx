@@ -2,6 +2,8 @@
 import PropTypes from 'prop-types';
 import styles from './HeroHeader.module.css';
 
+
+
 const HeroHeader = ({ image, title}) => {
     
     return (
@@ -14,7 +16,7 @@ const HeroHeader = ({ image, title}) => {
 
 HeroHeader.propTypes = {
     image: PropTypes.string.isRequired,
-    title: PropTypes.string,
+    title: PropTypes.node,
 };
 
 export default HeroHeader;
