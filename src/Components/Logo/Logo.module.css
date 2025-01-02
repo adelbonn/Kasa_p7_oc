@@ -5,11 +5,11 @@
 .logo {
     display: block;
     max-width: 210px;
-    min-width: 145px;
+    min-width: 122px;
     width: 210px;
     height: auto;
-    max-height: 68px;
-    min-height: 47px;
+    /* max-height: 68px;
+    min-height: 47px; */
     margin: 0;
 }
 
@@ -25,10 +25,19 @@
     .logo {
         /* max-width: 145px;
         min-width: 100px; */
-        width: 145px;
+        width: 122px;
         height: auto;
         /* max-height: 47px;
         min-height: 32px; */
         margin: 0;
+    }
+
+    .headerLogo {
+        color: var(--primary-color);
+    }
+    
+    .footerLogo {
+        color: var(--white-color);
+        width: 122px;
     }
 }
