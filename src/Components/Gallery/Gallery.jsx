@@ -1,6 +1,5 @@
 
 import styles from './Gallery.module.css';
-
 import PropTypes from 'prop-types';
 
 

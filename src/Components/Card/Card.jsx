@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 const Card = ({ logement }) => {
 
-
     return (
       <Link to={`/property/${logement.id}`} className={styles.card}>  {/*ici je crée un lien vers la page property en passant l'id du logement en paramètre*/}
         <figure className={styles.cardImageContainer}>
