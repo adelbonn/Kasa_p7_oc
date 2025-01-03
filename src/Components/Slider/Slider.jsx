@@ -2,7 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Slider.module.css';
 // import Arrow from '../Arrow/Arrow'; //Ajouter le style pour des flèche gauche et droite, et écrire le code de la même façon que pour ArrowUp et ArrowDown mais cette fois pour arrowRight et arrowLeft
-const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
+
+
+const Slider = ({ pictures, autoPlay = false, autoPlayTime = 3000 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slideInterval = useRef(null);
 
@@ -25,11 +27,13 @@ const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
         };
     }, [autoPlay, autoPlayTime]);
 
+
     return (
         <div className={styles.slider}>
             {pictures.length > 1 && (
                 <>
                     <button onClick={prevSlide} className={styles.prev}>❮</button>
+                    
                     <button onClick={nextSlide} className={styles.next}>❯</button>
                 </>
             )}

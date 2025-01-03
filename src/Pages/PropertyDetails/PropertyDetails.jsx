@@ -7,10 +7,7 @@ import styles  from './PropertyDetails.module.css';
 const PropertyDetails = () => {
 
     const { id } = useParams();
-    const property = DataLogements.find((item) => item.id ===id);
-console.log('propertyId', id);
-console.log('property data', property);
-
+    const property = DataLogements.find((item) => item.id === id);
 
     if(!property) {
         return <Navigate to="/not-found" />;
@@ -20,19 +17,38 @@ console.log('property data', property);
       
             <div className={styles.propertyDetails}>
                <Slider pictures={property.pictures}/>
-                {/* <h1>{property.title}</h1>
-                <p>{property.description}</p> */}
+                 <div className={styles.infoContainer}>
+                     <div className={styles.titleLocation}>
+                       <h1>{property.title}</h1>
+                       <p>{property.location}</p>
+                     </div>
 
+                    <div className={styles.host}>
+                        <p>{property.host.name}</p>
+                        <img src={property.host.picture} alt={property.host.name} className={styles.hostImage}/>
+                    </div>
+                  </div>
 
-                {/* <Slider pictures={property.pictures}/> */}
-               {/* h1(title),
-                P(description), 
-                Tag(tags), 
+            
+             <div className={styles.tagsStars}>
+                <div className={styles.tags}>
+                    {property.tags.map((tag, index) => {
+                        <span key={index} className={styles.tag}>{tag}</span>
+                    })}            
+                </div>
+
+                <div className={styles.ratings}>
+                  
+                </div>
+             </div>
+             
+                {/* 
                 Host(host: name, picture),
                 stars (rating) 
-                collapse('equipement) */}
+                collapse('equipement)  */}
             </div>
     
+          
     )
 };
 

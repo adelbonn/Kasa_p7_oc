@@ -1,10 +1,37 @@
 /* @import '../../Styles//variables.css'; */
 
 .propertyDetails {
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1240px;
     gap: 20px;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.titleLocation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titleLocation h1 {
+    font-size: var(--size-xxlarge);
+    font-weight: var(--font-weight-light);
+    color: var(--primary-color);
+}
+
+.host {
+    display: flex;
+    gap: 10px;
+}
+.host img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
 }
