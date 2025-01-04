@@ -11,7 +11,7 @@
     font-family: var(--font-family-primary);
     font-size: var(--size-x-medium);
     font-weight: var(--font-weight-medium);
-    color: var(--black-color);
+    color: var(--primary-color);
     text-align: right;
 }
 .hostPicture {
@@ -20,9 +20,13 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
     .hostContainer {
-        gap: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+        /*align-items: center; */
+        /*justify-content:space-between;*/
+        /* gap: 5px;
     }
     .hostName {
         font-size: var(--size-small);
@@ -30,5 +34,5 @@
     .hostPicture {
         width: 32px;
         height: 32px;
-    }
-}
+    } 
+} */

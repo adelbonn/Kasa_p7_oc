@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types';
 import styles from './Tag.module.css';
 
-const Tag = ({text}) => {
+const Tag = ({tags}) => {
     return(
-        <div className={styles.tag}>
-            {text}
+        <div className={styles.tagsContainer}>
+            {tags.map((tag, index) => (
+                <span key={index} className={styles.tag}>{tag}</span>
+            ))}
          </div>
     );
 };
 
 Tag.propTypes = {
-    text: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
       
 export default Tag;

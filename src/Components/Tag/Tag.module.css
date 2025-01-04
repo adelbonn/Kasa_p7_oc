@@ -1,11 +1,21 @@
 
-/* @import '../../Styles/variables.css'; */
+@import '../../Styles/variables.css';
 
-.tag {
+.tagsContainer {
+    display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+
+.tagsContainer span {
     background: #ff6060;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem; /* var(--size-medium); */
-    margin: 5px;
+    border-radius: 10px;
+    font-size: var(--size-medium);
+    margin: 10px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--size-small-medium);
 }

@@ -4,7 +4,7 @@ import Slider from '../../Components/Slider/Slider';
 import Collapse from '../../Components/Collapse/Collapse';
 import Host from '../../Components/Host/Host';
 import TitleLocation from '../../Components/TitleLocation/TitleLocation';
-// import Tag from '../../Components/Tag/Tag';
+import Tag from '../../Components/Tag/Tag';
 import styles  from './PropertyDetails.module.css';
 
 const PropertyDetails = () => {
@@ -21,8 +21,10 @@ const PropertyDetails = () => {
             <div className={styles.propertyDetails}>
                <Slider pictures={property.pictures}/>
                <div className={styles.infoContainer}>
+                <div className={styles.infoTagsContainer}>
                  <TitleLocation title={property.title} location={property.location} />
-                {/* <Tag tags={property.tags} /> */}
+                 <Tag tags={property.tags} />
+                 </div>
                 <div className={styles.HostStarsContainer}>
                  <Host host={property.host} />
                     <div className={styles.ratings}>
