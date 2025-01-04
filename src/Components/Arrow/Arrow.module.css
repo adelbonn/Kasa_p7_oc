@@ -26,7 +26,7 @@
     position: absolute;
     top: 50%;
     left: 23.5px;
-    transform: translateY(-25%);
+    transform: rotate(270deg);;
     z-index: 10;
 }
 .right 
@@ -34,6 +34,6 @@
     position : absolute;
     top: 50%;
     right: 23.5px;
-    transform: translateY(-75%);
+    transform: rotate(90deg);
     z-index: 10;
 }
