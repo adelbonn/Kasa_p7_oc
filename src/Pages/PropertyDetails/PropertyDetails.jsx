@@ -1,7 +1,7 @@
 import { useParams, Navigate } from 'react-router-dom';
 import DataLogements from '../../Data/DataLogements.json';
 import Slider from '../../Components/Slider/Slider';
-// import Collapse from '../../Components/Collapse/Collapse';
+import Collapse from '../../Components/Collapse/Collapse';
 import styles  from './PropertyDetails.module.css';
 
 const PropertyDetails = () => {
@@ -38,14 +38,28 @@ const PropertyDetails = () => {
                 </div>
 
                 <div className={styles.ratings}>
-                  
+                  {/* {Array.from({ length: property.rating }).map((_, index) => (
+                        <span key={index} className={styles.star}>⭐️</span>
+                    ))} */}
+                        {[...Array(5)].map((_, index) => (
+                        <span key={index} className={index < property.rating ? styles.starFilled : styles.starEmpty}>⭐️</span>
+                    ))}
+                   
                 </div>
              </div>
              
-                {/* 
-                Host(host: name, picture),
-                stars (rating) 
-                collapse('equipement)  */}
+            <div className={styles.collapse}>
+                <Collapse title="Description" >
+                    <p>{property.description}</p>
+                </Collapse>
+                <Collapse title="Equipements">
+                    <ul>
+                        {property.equipments.map((equipment, index) => (
+                            <li key={index}>{equipment}</li>
+                        ))}
+                    </ul>
+                </Collapse>
+              </div>  
             </div>
     
           

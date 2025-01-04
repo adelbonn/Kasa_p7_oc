@@ -18,6 +18,13 @@
 .arrowImg {
     width: 30px;
     height: 20px;
-    color: #fff;
+    color: var(--white-color);
 }
-
+.left {
+    left: 23.5px;
+    transform: rotate(90deg), translateY(-50%);
+}
+.right {
+    right: 23.5px;
+    transform: rotate(-90deg) translate(-50%);
+}

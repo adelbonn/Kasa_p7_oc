@@ -1,23 +1,29 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Slider.module.css';
-// import Arrow from '../Arrow/Arrow'; //Ajouter le style pour des flèche gauche et droite, et écrire le code de la même façon que pour ArrowUp et ArrowDown mais cette fois pour arrowRight et arrowLeft
+import Arrow from '../Arrow/Arrow'; //Ajouter le style pour des flèche gauche et droite, et écrire le code de la même façon que pour ArrowUp et ArrowDown mais cette fois pour arrowRight et arrowLeft
 
 
-const Slider = ({ pictures, autoPlay = false, autoPlayTime = 3000 }) => {
+const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const[isPlaying, setIsPlaying] = useState(false);
     const slideInterval = useRef(null);
 
     const nextSlide = () => {
+        console.log('Next Slide');
         setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+        setIsPlaying(true);
     };
 
     const prevSlide = () => {
+        console.log('Prev Slide');
         setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
+        setIsPlaying(true);
     };
 
     useEffect(() => {
-        if (autoPlay) {
+        console.log('Effect triggered');
+        if (autoPlay && isPlaying) {
             slideInterval.current = setInterval(nextSlide, autoPlayTime);
         }
         return () => {
@@ -25,19 +31,22 @@ const Slider = ({ pictures, autoPlay = false, autoPlayTime = 3000 }) => {
                 clearInterval(slideInterval.current);
             }
         };
-    }, [autoPlay, autoPlayTime]);
+    }, [autoPlay, autoPlayTime, isPlaying]);
 
 
     return (
         <div className={styles.slider}>
             {pictures.length > 1 && (
                 <>
-                    <button onClick={prevSlide} className={styles.prev}>❮</button>
-                    
-                    <button onClick={nextSlide} className={styles.next}>❯</button>
+                    {/* <button onClick={prevSlide} className={styles.prev}>❮</button>
+                    <button onClick={nextSlide} className={styles.next}>❯</button> */}
+                    <Arrow direction="left" onClick={prevSlide} />
+                    <Arrow direction="right" onClick={nextSlide} />
                 </>
             )}
+            <div className={styles.imageContainer}>
             <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} className={styles.image} />
+            </div>
             {pictures.length > 1 && (
                 <div className={styles.counter}>
                     {currentIndex + 1} / {pictures.length}

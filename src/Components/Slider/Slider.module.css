@@ -2,19 +2,26 @@
 
 .slider {
     position: relative;
-    width: 100%;;
+    width: 100%;
+    max-width: 1240px;
     height: 415px; 
     overflow: hidden;
     border-radius: 25px;
+    margin: 0 auto;
 }
 
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 .image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.prev, .next {
+/* .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -23,9 +30,9 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-}
+} */
 /*Utiliser le composant Arrow et changer le style comme sur le collapse*/
-.prev {
+/* .prev {
     left: 10px;
     background: transparent;
     height: 79px;
@@ -37,7 +44,7 @@
     background: transparent;
     height: 79px;
     width: 47px;
-}
+} */
 
 .counter {
     position: absolute;
