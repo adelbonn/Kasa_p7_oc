@@ -1,25 +1,26 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Slider.module.css';
 import Arrow from '../Arrow/Arrow'; 
 
 
 const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
+    
     const [currentIndex, setCurrentIndex] = useState(0);
     const[isPlaying, setIsPlaying] = useState(false);
     const slideInterval = useRef(null);
 
-    const nextSlide = () => {
+    const nextSlide = useCallback(() => {
         console.log('Next Slide Arrow right clicked', currentIndex);
         setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
         setIsPlaying(true);
-    };
+    }, [currentIndex, pictures.length]);
 
-    const prevSlide = () => {
+    const prevSlide = useCallback(() => {
         console.log('Prev Slide, flèche gauche cliquée', currentIndex);
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
+        setCurrentIndex((prevIndex) => (prevIndex === 0) ? pictures.length - 1 : prevIndex - 1);
         setIsPlaying(true);
-    };
+    }, [currentIndex, pictures.length]);
 
     useEffect(() => {
         console.log('Effect triggered');
@@ -31,19 +32,18 @@ const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
                 clearInterval(slideInterval.current);
             }
         };
-    }, [autoPlay, autoPlayTime, isPlaying]);
+    }, [autoPlay, autoPlayTime, isPlaying, nextSlide]);
 
 
     return (
         <div className={styles.slider}>
             {pictures.length > 1 && (
                 <>
-                    {/* <button onClick={prevSlide} className={styles.prev}>❮</button>
-                    <button onClick={nextSlide} className={styles.next}>❯</button> */}
-                    <Arrow direction="left" onClick={prevSlide} />
                   
-                    <Arrow direction="right" onClick={nextSlide} />
-                    {/* console.log('nextSlide', nextSlide) */}
+                    <Arrow direction="left" handleClick={prevSlide} />
+                  
+                    <Arrow direction="right" handleClick={nextSlide} />
+                  
                 </>
                 
             )}

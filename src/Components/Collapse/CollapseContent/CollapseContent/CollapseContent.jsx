@@ -4,7 +4,7 @@ import styles from './CollapseContent.module.css';
 const CollapseContent = ({ content }) => {
     return (
         <div className={styles.CollapseContent}>
-           <p>{content}</p>
+           <div>{content}</div>
          </div>
    );
 };
