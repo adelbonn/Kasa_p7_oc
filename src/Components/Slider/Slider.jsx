@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styles from './Slider.module.css';
-import Arrow from '../Arrow/Arrow'; //Ajouter le style pour des flèche gauche et droite, et écrire le code de la même façon que pour ArrowUp et ArrowDown mais cette fois pour arrowRight et arrowLeft
+import Arrow from '../Arrow/Arrow'; 
 
 
 const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
@@ -10,13 +10,13 @@ const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
     const slideInterval = useRef(null);
 
     const nextSlide = () => {
-        console.log('Next Slide');
+        console.log('Next Slide Arrow right clicked', currentIndex);
         setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
         setIsPlaying(true);
     };
 
     const prevSlide = () => {
-        console.log('Prev Slide');
+        console.log('Prev Slide, flèche gauche cliquée', currentIndex);
         setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
         setIsPlaying(true);
     };
@@ -41,8 +41,11 @@ const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
                     {/* <button onClick={prevSlide} className={styles.prev}>❮</button>
                     <button onClick={nextSlide} className={styles.next}>❯</button> */}
                     <Arrow direction="left" onClick={prevSlide} />
+                  
                     <Arrow direction="right" onClick={nextSlide} />
+                    {/* console.log('nextSlide', nextSlide) */}
                 </>
+                
             )}
             <div className={styles.imageContainer}>
             <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} className={styles.image} />

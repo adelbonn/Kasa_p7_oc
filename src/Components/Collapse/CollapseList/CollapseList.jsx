@@ -4,11 +4,11 @@ import Data from '../../../Data/Collapse.json';
 
 const CollapseList = () => {
 const [collapses, setCollapses] = useState([]);
-console.log('collapses', collapses);
+// console.log('collapses', collapses);
 
 useEffect(() => {
     setCollapses(Data);
-    console.log('Data', Data);
+    // console.log('Data', Data);
 }, []);
 
 

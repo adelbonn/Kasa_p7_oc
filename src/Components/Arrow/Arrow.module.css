@@ -20,11 +20,20 @@
     height: 20px;
     color: var(--white-color);
 }
-.left {
+
+.left 
+.arrowImg {
+    position: absolute;
+    top: 50%;
     left: 23.5px;
-    transform: rotate(90deg), translateY(-50%);
+    transform: translateY(-25%);
+    z-index: 10;
 }
-.right {
+.right 
+.arrowImg{
+    position : absolute;
+    top: 50%;
     right: 23.5px;
-    transform: rotate(-90deg) translate(-50%);
+    transform: translateY(-75%);
+    z-index: 10;
 }

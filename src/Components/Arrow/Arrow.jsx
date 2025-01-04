@@ -22,10 +22,15 @@ const Arrow = ({ direction, handleClick, isOpen }) => {
  const arrowClass = direction ? styles[direction] : (isOpen ? styles.arrowDown : styles.arrowUp);
  return (
     <div
-    className={`${styles.arrow} ${arrowClass}`}
-    onClick={handleClick}
+      className={`${styles.arrow} ${arrowClass}`}
+      
+      onClick={handleClick}
+      aria-expanded={isOpen}
+      aria-controls="collapse-content"
+      role="button"
+      
     >
-    <img src={arrowImg} alt="Arrow" className={styles.arrow} />
+      <img src={arrowImg} alt="Arrow" className={styles.arrowImg}  />
     </div>
     );
 };

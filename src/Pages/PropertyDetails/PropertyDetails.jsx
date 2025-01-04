@@ -49,15 +49,17 @@ const PropertyDetails = () => {
              </div>
              
             <div className={styles.collapse}>
-                <Collapse title="Description" >
-                    <p>{property.description}</p>
+                <Collapse title="Description"
+                    content={<p>{property.description}</p>}>
                 </Collapse>
-                <Collapse title="Equipements">
-                    <ul>
+                <Collapse title="Equipements"
+                   content={
+                        <ul>
                         {property.equipments.map((equipment, index) => (
                             <li key={index}>{equipment}</li>
                         ))}
                     </ul>
+                   }>
                 </Collapse>
               </div>  
             </div>
