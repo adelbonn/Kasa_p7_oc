@@ -20,7 +20,3 @@ Host.propTypes = {
 };
 export default Host;
 
-// <div className={styles.host}>
-// <p>{property.host.name}</p>
-// <img src={property.host.picture} alt={property.host.name} className={styles.hostImage}/>
-// </div>

@@ -15,20 +15,13 @@
     width: 100%;
 }
 
-.titleLocation {
+
+.HostStarsContainer {
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
+    justify-content: space-between;
+    margin-top: 20px;
 }
-
-.titleLocation h1 {
-    font-size: var(--size-xxlarge);
-    font-weight: var(--font-weight-light);
-    color: var(--primary-color);
-}
-
-
-
 .tagsRatings {
     display: flex;
     justify-content: space-between;

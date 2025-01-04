@@ -1,0 +1,30 @@
+@import '../../styles/variables.css';
+
+.titleLocation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    
+}
+
+.titleLocation h1 {
+    font-size: var(--size-xxlarge);
+    font-weight: var(--font-weight-medium);
+    color: var(--primary-color);
+}
+
+.titleLocation p {
+    font-size: var(--size-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--black-color);
+}
+
+@media screen and (max-width: 375px) {
+    .titleLocation h1 {
+        font-size: var(--sizex-x-medium);
+    }
+    .titleLocation p {
+        font-size: var(--size-small-medium);
+    }
+}

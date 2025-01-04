@@ -3,6 +3,8 @@ import DataLogements from '../../Data/DataLogements.json';
 import Slider from '../../Components/Slider/Slider';
 import Collapse from '../../Components/Collapse/Collapse';
 import Host from '../../Components/Host/Host';
+import TitleLocation from '../../Components/TitleLocation/TitleLocation';
+// import Tag from '../../Components/Tag/Tag';
 import styles  from './PropertyDetails.module.css';
 
 const PropertyDetails = () => {
@@ -18,21 +20,18 @@ const PropertyDetails = () => {
       
             <div className={styles.propertyDetails}>
                <Slider pictures={property.pictures}/>
-                 <div className={styles.infoContainer}>
-                     <div className={styles.titleLocation}>
-                       <h1>{property.title}</h1>
-                       <p>{property.location}</p>
-                     </div>
-                     <div className={styles.host}>
-                   <Host host={property.host} />
-                   <div className={styles.ratings}>
+               <div className={styles.infoContainer}>
+                 <TitleLocation title={property.title} location={property.location} />
+                {/* <Tag tags={property.tags} /> */}
+                <div className={styles.HostStarsContainer}>
+                 <Host host={property.host} />
+                    <div className={styles.ratings}>
                         {[...Array(5)].map((_, index) => (
                         <span key={index} className={index < property.rating ? styles.starFilled : styles.starEmpty}>⭐️</span>
                     ))}
-                </div>
-                </div>
-                  </div>
-
+                    </div>
+                 </div>
+               </div>
             
              <div className={styles.tagsStars}>
                 <div className={styles.tags}>
