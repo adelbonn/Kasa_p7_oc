@@ -27,15 +27,7 @@
     color: var(--primary-color);
 }
 
-.host {
-    display: flex;
-    gap: 10px;
-}
-.hostImage {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
+
 
 .tagsRatings {
     display: flex;
@@ -58,6 +50,8 @@
 
 .ratings {
     display: flex;
+    justify-content: flex-end;
+    margin-top: 21px;
     gap: 5px;
 }
 

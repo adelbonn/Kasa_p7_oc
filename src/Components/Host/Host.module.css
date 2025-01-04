@@ -1,0 +1,33 @@
+@import '../../Styles/variables.css';
+
+.hostContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hostName {
+    font-family: var(--font-family-primary);
+    font-size: var(--size-x-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--black-color);
+    text-align: right;
+}
+.hostPicture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 375px) {
+    .hostContainer {
+        gap: 5px;
+    }
+    .hostName {
+        font-size: var(--size-small);
+    }
+    .hostPicture {
+        width: 32px;
+        height: 32px;
+    }
+}

@@ -11,19 +11,19 @@ const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
     const slideInterval = useRef(null);
 
     const nextSlide = useCallback(() => {
-        console.log('Next Slide Arrow right clicked', currentIndex);
+        
         setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
         setIsPlaying(true);
-    }, [currentIndex, pictures.length]);
+    }, [ pictures.length]);
 
     const prevSlide = useCallback(() => {
-        console.log('Prev Slide, flèche gauche cliquée', currentIndex);
+       
         setCurrentIndex((prevIndex) => (prevIndex === 0) ? pictures.length - 1 : prevIndex - 1);
         setIsPlaying(true);
-    }, [currentIndex, pictures.length]);
+    }, [ pictures.length]);
 
     useEffect(() => {
-        console.log('Effect triggered');
+        // console.log('Effect triggered');
         if (autoPlay && isPlaying) {
             slideInterval.current = setInterval(nextSlide, autoPlayTime);
         }
@@ -39,11 +39,8 @@ const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
         <div className={styles.slider}>
             {pictures.length > 1 && (
                 <>
-                  
-                    <Arrow direction="left" handleClick={prevSlide} />
-                  
-                    <Arrow direction="right" handleClick={nextSlide} />
-                  
+                    <Arrow direction="left" handleClick={prevSlide} isOpen={isPlaying} />
+                    <Arrow direction="right" handleClick={nextSlide} isOpen={isPlaying} />
                 </>
                 
             )}

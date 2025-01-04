@@ -2,6 +2,7 @@ import { useParams, Navigate } from 'react-router-dom';
 import DataLogements from '../../Data/DataLogements.json';
 import Slider from '../../Components/Slider/Slider';
 import Collapse from '../../Components/Collapse/Collapse';
+import Host from '../../Components/Host/Host';
 import styles  from './PropertyDetails.module.css';
 
 const PropertyDetails = () => {
@@ -22,11 +23,14 @@ const PropertyDetails = () => {
                        <h1>{property.title}</h1>
                        <p>{property.location}</p>
                      </div>
-
-                    <div className={styles.host}>
-                        <p>{property.host.name}</p>
-                        <img src={property.host.picture} alt={property.host.name} className={styles.hostImage}/>
-                    </div>
+                     <div className={styles.host}>
+                   <Host host={property.host} />
+                   <div className={styles.ratings}>
+                        {[...Array(5)].map((_, index) => (
+                        <span key={index} className={index < property.rating ? styles.starFilled : styles.starEmpty}>⭐️</span>
+                    ))}
+                </div>
+                </div>
                   </div>
 
             
@@ -37,15 +41,7 @@ const PropertyDetails = () => {
                     })}            
                 </div>
 
-                <div className={styles.ratings}>
-                  {/* {Array.from({ length: property.rating }).map((_, index) => (
-                        <span key={index} className={styles.star}>⭐️</span>
-                    ))} */}
-                        {[...Array(5)].map((_, index) => (
-                        <span key={index} className={index < property.rating ? styles.starFilled : styles.starEmpty}>⭐️</span>
-                    ))}
-                   
-                </div>
+                
              </div>
              
             <div className={styles.collapse}>
