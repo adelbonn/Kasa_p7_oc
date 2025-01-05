@@ -11,8 +11,10 @@
     margin-right: 10px;
   }
 
-  @media screen and (max-width: 375px) {
-
+  @media screen and (max-width: 425px) and (min-width: 320px)  {
+    .ratingsContainer {
+     margin-right: 15px;
+      }
     .starFilled, .starEmpty {
         width: 13px;
         height: 13px;

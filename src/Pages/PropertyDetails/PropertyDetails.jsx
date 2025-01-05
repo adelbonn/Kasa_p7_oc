@@ -8,7 +8,6 @@ import Tag from "../../Components/Tag/Tag";
 import styles from "./PropertyDetails.module.css";
 import Ratings from "../../Components/Star/Ratings";
 
-
 const PropertyDetails = () => {
   const { id } = useParams();
   const property = DataLogements.find((item) => item.id === id);
@@ -28,16 +27,6 @@ const PropertyDetails = () => {
         <div className={styles.HostStarsContainer}>
           <Host host={property.host} />
           <div className={styles.ratings}>
-            {/* {[...Array(5)].map((_, index) => (
-              <span
-                key={index}
-                className={
-                  index < property.rating ? styles.starFilled : styles.starEmpty
-                }
-              >
-                ⭐️
-              </span>
-            ))} */}
             <Ratings rating={property.rating} />
           </div>
         </div>
@@ -55,12 +44,14 @@ const PropertyDetails = () => {
 
       <div className={styles.propertyCollapseContainer}>
         <Collapse
-          className={styles.collapsePropertyDetails}
+          page="propertyDetails"
+          className={styles.propertyCollapse}
           title="Description"
           content={<p>{property.description}</p>}
         />
         <Collapse
-          className={styles.collapsePropertyDetails}
+          page="propertyDetails"
+          className={styles.propertyCollapse}
           title="Equipements"
           content={
             <div>

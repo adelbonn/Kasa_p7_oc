@@ -21,15 +21,10 @@
     color: var(--white-color);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) and (min-width: 320px) {
     .logo {
-        /* max-width: 145px;
-        min-width: 100px; */
         width: 122px;
         height: auto;
-        /* max-height: 47px;
-        min-height: 32px; */
-        margin: 0;
     }
 
     .headerLogo {

@@ -45,13 +45,3 @@
 
 /*style spécifique aux collapses de PropertyDetails*/
 
-.propertyCollapseContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-}
-.collapsePropertyDetails {
-    flex:1;
-    max-width: 48%;
-}
