@@ -10,16 +10,14 @@
 
 .collapseButton {
     width: 100%;
-    /* max-width: 1023px;
-    min-width: 335px; */
     height: 52px;
-    background: var(--primary-color);  /* #ff6060;*/
+    background: var(--primary-color);
     border-radius: 5px;
-    color: var(--white-color);   /* #fff;   */
+    color: var(--white-color);
     padding: 20px;
     margin: 30px auto 0;
     text-align: left;
-    font-size: var(--sizex-x-medium);     /*1.125rem; ( 18px)*/
+    font-size: var(--sizex-x-medium);
     
     display: flex;
     justify-content: space-between;
@@ -43,4 +41,17 @@
 .collapseContent.open {
     height: auto;
     padding: 20px;
+}
+
+/*style spécifique aux collapses de PropertyDetails*/
+
+.propertyCollapseContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+.collapsePropertyDetails {
+    flex:1;
+    max-width: 48%;
 }

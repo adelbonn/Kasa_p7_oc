@@ -52,8 +52,7 @@ const contentRef = useRef(null);
              className={`${styles.collapseContent} ${isOpen ? styles.open : ''}`}
              >
                 <CollapseContent content={content} />
-              
-              
+               
             </div>
         </>
     );
