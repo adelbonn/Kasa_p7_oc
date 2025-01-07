@@ -5,16 +5,23 @@ import PropertyDetail from '../../Pages/PropertyDetails/PropertyDetails';
 import About from '../../Pages/About/About';
 import NotFound from '../../Pages/NotFound/NotFound';
 import Layout from '../Layout/Layout';
+import { element } from 'prop-types';
+
+const routes = [
+  { path: "/", element: <Home />},
+  { path: "about", element: <About />},
+  { path: "property/:id", element: <PropertyDetail />},
+  { path: "*", element: <NotFound />}
+]
 
 const AppRouter = () => {
     return (
     
             <Routes>
                 <Route path="/" element={<Layout />}>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/property/:id" element={<PropertyDetail />} />
-                  <Route path="*" element={<NotFound />} />
+                  {routes.map((route, index) => (
+                    <Route key={index} path={route.path} element={route.element} />
+                  ))}
                 </Route>
             </Routes>
        
