@@ -4,12 +4,12 @@ import styles from './HeroHeader.module.css';
 
 
 
-const HeroHeader = ({ image, title}) => {
+const HeroHeader = ({ image, title, isTitleDisplayed}) => {
     
     return (
         <div className={styles.heroHeader}>
             <img src={image} alt ='hero header' className={styles.heroImgHeader}/>
-           {title && <h1 className={styles.heroTitle}>{title}</h1>}
+           {isTitleDisplayed && title && <h1 className={styles.heroTitle}>{title}</h1>}
         </div>
     );
 };
@@ -17,6 +17,7 @@ const HeroHeader = ({ image, title}) => {
 HeroHeader.propTypes = {
     image: PropTypes.string.isRequired,
     title: PropTypes.node,
+    isTitleDisplayed: PropTypes.bool,
 };
 
 export default HeroHeader;

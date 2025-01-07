@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 import styles from './Header.module.css';
 import NavBar from '../NavBar/NavBar';
 
@@ -11,9 +11,7 @@ const Header = () => {
     );
 };
 
-Header.propTypes = {
-    children: PropTypes.node,
-}
+// 
 export default Header;
 
  

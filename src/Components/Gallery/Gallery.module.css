@@ -1,18 +1,5 @@
 @import '../../styles/variables.css';
 
- /* .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    grid-auto-rows: auto;
-    gap: 56px 50px;
-    padding: 50px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1240px;
-    min-width: 335px;
-    background: var(--quinary-color);
-    border-radius: 20px;
-}  */
 
 .gallery {
     display: flex;
@@ -26,7 +13,7 @@
     border-radius: 20px;
 }
 
-@media screen and(min-width: 375px) and (max-width: 425px) {
+@media screen and(min-width: 320px) and (max-width: 425px) {
     .gallery {
         padding: 0;
         margin: 0 auto;

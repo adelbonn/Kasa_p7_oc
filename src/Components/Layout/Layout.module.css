@@ -18,7 +18,7 @@
     width: 100%;
     object-fit: cover;
     margin: 0;
-    padding: 0 100PX;
+    /* padding: 0 100PX; */
  }
 
 
@@ -37,6 +37,10 @@
     }
     
 } */
+
+/*  trouver où dans mon code le style de main est écrasé car jean-baptiste a juste mis le padding du main a 0 20px en mobile et cela a
+ corriger presque tout les problème de style de mes éléments**/
+
 @media screen and (max-width: 375px) {
     .layout {
         gap: 27px;

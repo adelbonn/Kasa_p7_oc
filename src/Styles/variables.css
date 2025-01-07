@@ -18,12 +18,14 @@
     --size-small-medium: 0.875rem; /*14px*/
     --size-medium: 1rem; /* 16px*/
     --sizex-x-medium: 1.125rem; /*18px*/
-    --size-large: 1.5rem; /* 24px*/
+    --size-large: 1.5rem; /* 24px*//*title size font for mobile*/
     ---size-xlarge: 2rem; /*32px*/
     --size-xxlarge: 2.25rem; /*36px*/
-    --size-xxx-large: 3rem; /*48px*/
+    --size-xxx-large: 3rem; /*48px*//**//*title size font for desktop*/
     --size-XX-large: 18rem; /*288px*/
 
+/*taille de la police adaptative*/
+     --size-adaptativFont-large: clamp(1.5rem, 2.5vw, 3rem);
 
     /*font-weights*/
     --font-weight-light: 300;

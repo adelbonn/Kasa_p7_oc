@@ -6,7 +6,7 @@ import CollapseArrow from "../Arrow/Arrow";
 import CollapseTitle from "./CollapseContent/CollapseTitle/CollapseTitle";
 // import CollapseList from './CollapseList/CollapseList';
 
-const Collapse = ({ title, content, page }) => {
+const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
   console.log("initial isOpen", isOpen);
 
@@ -28,12 +28,8 @@ const Collapse = ({ title, content, page }) => {
     }
   }, [isOpen]);
 
-  //détermine la class selon la page
-  const collapseClass =
-    page === "about" ? styles.collapseAbout : styles.propertyCollapse;
-
   return (
-    <>
+    <div>
       <button
         className={styles.collapseButton}
         onClick={handleCollapse}
@@ -48,11 +44,11 @@ const Collapse = ({ title, content, page }) => {
         ref={contentRef}
         className={`${styles.collapseContent} ${
           isOpen ? styles.open : ""
-        } ${collapseClass}`}
+        }`}
       >
         <CollapseContent content={content} />
       </div>
-    </>
+    </div>
   );
 };
 
