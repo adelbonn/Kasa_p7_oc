@@ -1,10 +1,10 @@
-/* @import '../../Styles//variables.css'; */
+@import '../../Styles//variables.css';
 
 .propertyDetails {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .infoContainer {
@@ -12,43 +12,32 @@
     justify-content: space-between;
     width: 100%;
 }
+
 .infoTagsContainer {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
 .HostStarsContainer {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    align-items: center;
+    gap: 21px;
     margin-top: 20px;
 }
-/* .tagsRatings {
+
+.tagsRatings {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+  
 }
-
-.tags {
-    display: flex;
-    gap: 10px;
-}
-
-.tag {
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: var(--quaternary-color);
-    color: var(--white-color);
-    font-size: var(--size-small-medium);
-} */
-
 
 
 .propertyCollapseContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 20px;
     margin-top: 20px;
 }
@@ -64,20 +53,21 @@
 
 
 
-@media screen and (max-width: 425px) and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
 
 
     .propertyCollapseContainer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 20px;
-        margin-top: 20px;
+        /* gap: 20px; */
+        /* margin-top: 13px; */
     }
-
+    .infoTagsContainer {
+        gap: 10px;
+    }
     .infoContainer {
         flex-direction: column;
-        gap: 20px;
     }
 
     .HostStarsContainer {
@@ -85,7 +75,8 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
+     
     }
+  
 }
 

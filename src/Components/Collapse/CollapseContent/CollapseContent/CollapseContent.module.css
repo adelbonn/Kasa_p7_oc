@@ -3,7 +3,7 @@
 .collapseContent {
     background: var(--quinary-color);
     color: var(--black-color);
-    padding: 20px; /*vérifier que l'afficchage se fait sans saut , si c'est le cas ajuster le padding*/
+    padding: 20px;
     font-size: 18px;
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-regular);
@@ -18,6 +18,6 @@
 
 .collapseContent.open {
     height: auto;
-    padding: 20px;  /*vérifier que tout est correct a l'affichage du contenu*/
+    padding: 20px;
     opacity: 1;
 }

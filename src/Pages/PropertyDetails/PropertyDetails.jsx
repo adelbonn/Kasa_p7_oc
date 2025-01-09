@@ -19,11 +19,13 @@ const PropertyDetails = () => {
   return (
     <div className={styles.propertyDetails}>
       <Slider pictures={property.pictures} />
+
       <div className={styles.infoContainer}>
         <div className={styles.infoTagsContainer}>
           <TitleLocation title={property.title} location={property.location} />
           <Tag tags={property.tags} />
         </div>
+
         <div className={styles.HostStarsContainer}>
           <Host host={property.host} />
           <div className={styles.ratings}>
@@ -31,17 +33,7 @@ const PropertyDetails = () => {
           </div>
         </div>
       </div>
-
-      <div className={styles.tagsStars}>
-        <div className={styles.tags}>
-          {property.tags.map((tag, index) => {
-            <span key={index} className={styles.tag}>
-              {tag}
-            </span>;
-          })}
-        </div>
-      </div>
-
+      
       <div className={styles.propertyCollapseContainer}>
         <Collapse
           page="propertyDetails"
@@ -50,7 +42,7 @@ const PropertyDetails = () => {
           content={<p>{property.description}</p>}
         />
         <Collapse
-          page="propertyDetails"
+          // page="propertyDetails"
           className={styles.propertyCollapse}
           title="Equipements"
           content={

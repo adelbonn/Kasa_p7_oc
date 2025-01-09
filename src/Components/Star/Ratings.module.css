@@ -3,21 +3,22 @@
 .ratingsContainer {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
   
   .starFilled, .starEmpty {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    width: 24.75px;
+    height: 24.75px;
+    margin-left: 10px;
   }
 
-  @media screen and (max-width: 425px) and (min-width: 320px)  {
+  @media screen and (min-width: 320px) and (max-width: 425px) {
     .ratingsContainer {
-     margin-right: 15px;
+     margin-left: 2px;
       }
     .starFilled, .starEmpty {
-        width: 13px;
-        height: 13px;
-        margin-right: 5px;
+        width: 13.41px;
+        height: 13.41px;
+        margin: 0 7px 0 0;
       }
   }

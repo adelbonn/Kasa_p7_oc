@@ -5,6 +5,7 @@
     align-items: center;
     color: var(--primary-color);
     text-align: center;
+    font-size: var(--size-xxlarge);
 }
 .NotFoundLink {
     text-decoration: underline;
@@ -15,12 +16,17 @@
     font-size: var(--sizex-x-medium);
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
 
     .NotFoundText {
-        font-size: var(--size-x-medium);
+    font-size: var(--sizex-x-medium);
+    font-weight: var(--font-weight-medium);
+    line-height: 25.67px;
+    text-underline-position: from-font;
     }
+
     .NotFoundLink {
         font-size: var(--size-small-medium);
+        line-height: 19.96px;
     }
 }

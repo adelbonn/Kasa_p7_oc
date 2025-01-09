@@ -1,3 +1,47 @@
+@import '../../Styles/variables.css';
+
+.notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 89px;
+    margin-top: 89px;
+}
+
+/* .NotFoundH1 {
+    font-size: var(--size-XX-large);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.NotFoundH2 {
+    font-size: var(--size-xxlarge);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    text-align: center;
+} */
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .NotFoundH1 {
+        font-size: 96px;
+    }
+
+    .NotFoundH2 {
+        font-size: 48px;
+    }
+
+    
+/* .notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 113px;
+    margin-top: 113px;
+}
+
 .NotFoundH1 {
     font-size: var(--size-XX-large);
     margin: 0;
@@ -12,4 +56,6 @@
     padding: 0;
     color: var(--primary-color);
     text-align: center;
+} */
 }
+

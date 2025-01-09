@@ -5,7 +5,7 @@ import PropertyDetail from '../../Pages/PropertyDetails/PropertyDetails';
 import About from '../../Pages/About/About';
 import NotFound from '../../Pages/NotFound/NotFound';
 import Layout from '../Layout/Layout';
-import { element } from 'prop-types';
+
 
 const routes = [
   { path: "/", element: <Home />},

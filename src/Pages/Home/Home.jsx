@@ -17,7 +17,7 @@ const Home = () => {
     
     return (     
     <>
-    <HeroHeader image={image} title="Chez vous partout, ailleurs" isTitleDisplayed={true} />
+    <HeroHeader image={image} title="Chez vous, partout ailleurs" isTitleDisplayed={true} />
         <Gallery>
            {logements.map((logement) => 
               <Card 

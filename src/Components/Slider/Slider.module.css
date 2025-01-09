@@ -3,7 +3,6 @@
 .slider {
     position: relative;
     width: 100%;
-    max-width: 1240px;
     height: 415px; 
     overflow: hidden;
     border-radius: 25px;
@@ -32,4 +31,11 @@
     color: white;
     padding: 5px;
     font-size: 18px;
+}
+
+@media screen and (max-width: 425px) {
+    .slider {
+       width: 335px;
+       height: 255px;
+    }
 }

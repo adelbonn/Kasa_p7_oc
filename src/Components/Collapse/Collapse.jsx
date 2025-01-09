@@ -8,7 +8,7 @@ import CollapseTitle from "./CollapseContent/CollapseTitle/CollapseTitle";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log("initial isOpen", isOpen);
+  // console.log("initial isOpen", isOpen);
 
   const contentRef = useRef(null);
   //     console.log('received contentRef', contentRef)
@@ -29,7 +29,7 @@ const Collapse = ({ title, content }) => {
   }, [isOpen]);
 
   return (
-    <div>
+    <div className={styles.collapse}>
       <button
         className={styles.collapseButton}
         onClick={handleCollapse}

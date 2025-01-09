@@ -4,18 +4,7 @@ import arrowImg from '../../assets/img/Arrow.svg';
 
 
 
-// const CollapseArrow = ({ isOpen }) => {
-//     return (
-//         <span className={`${styles.arrow} ${isOpen ? styles.arrowDown : styles.arrowUp}`}>
-//             <img src={arrowUp} alt="Arrow" className={styles.arrowImg} />
-//         </span>
-//     );
-// }
 
-// CollapseArrow.propTypes = {
-//     isOpen: PropTypes.bool.isRequired,
-// }
-// export default CollapseArrow;
 
 const Arrow = ({ direction, handleClick, isOpen }) => {
     

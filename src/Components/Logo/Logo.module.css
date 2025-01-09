@@ -6,33 +6,31 @@
     display: block;
     max-width: 210px;
     min-width: 122px;
-    width: 210px;
     height: auto;
-    /* max-height: 68px;
-    min-height: 47px; */
     margin: 0;
 }
 
 .headerLogo {
     color: var(--primary-color);
+    width: 210px;
+    margin: 0;
 }
 
 .footerLogo {
     color: var(--white-color);
+    width: 122px;
+    margin-bottom: 29px;
 }
 
-@media screen and (max-width: 425px) and (min-width: 320px) {
-    .logo {
-        width: 122px;
-        height: auto;
-    }
-
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
     .headerLogo {
-        color: var(--primary-color);
+        width: 145px;
     }
-    
+}
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
     .footerLogo {
-        color: var(--white-color);
         width: 122px;
+        margin-bottom: 14px;
     }
 }

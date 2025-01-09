@@ -2,20 +2,24 @@
 
 
 .collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    max-width: 1023px;
-    height: 52px;
+    /* max-width: 1023px; */
+    overflow: hidden;
     margin: 20px auto;
 }
 
 .collapseButton {
+     /* flex: 1;  */
     width: 100%;
     height: 52px;
     background: var(--primary-color);
     border-radius: 5px;
     color: var(--white-color);
     padding: 20px;
-    margin: 30px auto 0;
+    margin: 0px auto 0;
     text-align: left;
     font-size: var(--sizex-x-medium);
     
@@ -35,13 +39,50 @@
     font-size: 1rem;
     height: auto;
     overflow: hidden;
-    transition: height 0.6s ease, opacity 0.5s ease-in;
+    transition: height 0.4s ease, opacity 0.45s ease-in;
 }
 
 .collapseContent.open {
     height: auto;
     padding: 20px;
+    overflow: visible;
+    opacity: 1;
 }
 
 /*style spécifique aux collapses de PropertyDetails*/
 
+
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+    .collapse {
+        margin: 10px auto;
+    }
+    .collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1023px;
+        /* height: 52px; */
+        /* flex-basis: 52px; */
+        overflow: hidden;
+        margin: 0px auto 20px;
+    }
+    
+    .collapseButton {
+         flex: 1; 
+        width: 100%;
+        height: 30px;
+        background: var(--primary-color);
+        border-radius: 5px;
+        color: var(--white-color);
+      
+        margin: 0px auto;
+        text-align: left;
+        font-size: 0.81rem;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+}
