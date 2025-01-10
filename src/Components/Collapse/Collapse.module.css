@@ -52,7 +52,7 @@
 /*style spécifique aux collapses de PropertyDetails*/
 
 
-@media screen and (min-width: 375px) and (max-width: 767.98px) {
+@media screen and (min-width: 375px) and (max-width: 767.99px) {
     .collapse {
         margin: 10px auto;
     }
