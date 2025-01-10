@@ -13,7 +13,7 @@ useEffect(() => {
 
 
     return (
-        <>
+        <div>
           {collapses.map((collapse) =>
             <Collapse 
               key={collapse.id}
@@ -21,7 +21,7 @@ useEffect(() => {
               content={collapse.content}
             />
          )}
-        </>
+        </div>
     );
 };
 
