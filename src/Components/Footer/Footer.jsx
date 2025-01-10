@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <Logo location="footer"/>
-            <p>© 2023 Kasa. All rights reserved.</p>
+            <p className={styles.footerText}>© 2020 Kasa. All rights reserved.</p>
         </footer>
     );
 }
