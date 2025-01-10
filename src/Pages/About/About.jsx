@@ -7,10 +7,10 @@ import image from '../../assets/img/HeroImgAbout.png';
 const About = () => {
   return (
    
-          <div>
+          <>
             <HeroHeader image={image}/>
            <CollapseList />           
-          </div>
+          </>
 
   );
 };
