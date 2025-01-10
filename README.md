@@ -51,9 +51,9 @@ Une fois l'application démarée, vous pouvez y accéder via votre navigateur à
 - **Navigation** : Utilisation de React Router pour la navigation entre les différentes pages de l'application.
 - **Galeries d'images** : Défilement des photos avec gestion des extrémités (première et dernière image). 
 - **Collapse** : Composant repliables pour afficher ds informations supplémentaires.
-- **Page d'erreur** : Redirection vers la page d'eereur 404 en cas de route inexistante.
-- **Slideshox** : Composant de diaporama pour afficher les images des propriétés.
-- **Responsive Design** : Interfac utilisateur responsive basée sur la maquettes Figma.
+- **Page d'erreur** : Redirection vers la page d'erreur 404 en cas de route inexistante.
+- **Slideshow** : Composant de diaporama pour afficher les images des propriétés.
+- **Responsive Design** : Interface utilisateur responsive basée sur la maquettes Figma.
 
 ## Techonologies
 
