@@ -35,7 +35,7 @@
 
 @media screen and (max-width: 425px) {
     .slider {
-       width: 335px;
+       /* width: 335px; */
        height: 255px;
     }
 }

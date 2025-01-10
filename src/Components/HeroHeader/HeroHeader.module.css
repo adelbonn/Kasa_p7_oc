@@ -8,6 +8,7 @@
     overflow: hidden;
     margin: 0 auto 43px;  
     border: 1px solid var(--black-color);
+    max-width: 1240px;
 }
 
 .heroImgHeader {
