@@ -20,7 +20,7 @@ const Ratings = ({ rating }) => {
 };
 
 Ratings.propTypes = {
-  rating: PropTypes.number.isRequired,
+  rating: PropTypes.string.isRequired,
 };
 
 export default Ratings;
