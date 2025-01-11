@@ -8,16 +8,11 @@ import CollapseTitle from "./CollapseContent/CollapseTitle/CollapseTitle";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
-  // console.log("initial isOpen", isOpen);
-
+  
   const contentRef = useRef(null);
-  //     console.log('received contentRef', contentRef)
-  //   console.log('received title', title)
-  //   console.log('received content', content)
 
   const handleCollapse = () => {
     setIsOpen(!isOpen);
-    // console.log('Toggle isOpen', !isOpen);
   };
 
   useEffect(() => {

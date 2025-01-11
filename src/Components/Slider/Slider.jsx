@@ -4,12 +4,12 @@ import styles from './Slider.module.css';
 import Arrow from '../Arrow/Arrow'; 
 
 
-const Slider = ({ pictures, autoPlay = false, autoPlayTime = 3000 }) => {
+const Slider = ({ pictures, autoPlay = true, autoPlayTime = 3000 }) => {
     
     const [currentIndex, setCurrentIndex] = useState(0);
     const[isPlaying, setIsPlaying] = useState(false);
     const slideInterval = useRef(null);
-//corriger le petit saut entre les images, quand j'utilise autoplay et que je clique sur ArrowLeft
+
     const nextSlide = useCallback(() => {
         
         setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
