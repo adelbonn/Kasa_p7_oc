@@ -6,7 +6,7 @@ Ce projet a été réalisé dans le cadre du parcours Intégrateur Web chez Open
 ##Tables des matières
 
 - [Description](#description)
-- [Isntallation](#Installation)
+- [Installation](#Installation)
 - [Utilisation](#Utilisation)
 - [Fonctionnalités](#Fonctionnalités)
 - [Technologies](#Technologies)
@@ -63,12 +63,12 @@ Une fois l'application démarée, vous pouvez y accéder via votre navigateur à
 
 ## Contributeur
 
--**Adel Bonn** - Intégrateur Web 
+-**Adeline Bonnamour** - Intégrateur Web 
 
 ## Licence
 
 Ce projet est sous licence MIT
-Voir le ficheir Licence pour plus de détails
+Voir le fichier Licence pour plus de détails
 
 ## Notes supplémentaires
 
