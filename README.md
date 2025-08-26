@@ -1,6 +1,6 @@
 # Kasa
 
-Kasa est une application pour une agance de location d'appartement entre particuliers.
+Kasa est une application pour une agence de location d'appartements entre particuliers.
 Ce projet a été réalisé dans le cadre du parcours Intégrateur Web chez Openclassroom.
 
 ##Tables des matières
