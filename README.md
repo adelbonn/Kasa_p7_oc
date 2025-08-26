@@ -44,7 +44,7 @@ npm run dev
 
 ## Utilisation 
 
-Une fois l'application démarée, vous pouvez y accéder via votre navigateur à l'adrsse suivante : `http://localhost:5173`.
+Une fois l'application démarée, vous pouvez y accéder via votre navigateur à l'adresse suivante : `http://localhost:5173`.
 
 ## Fonctionnalités
 
